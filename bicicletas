@@ -50,4 +50,12 @@ while ejecutando:
             else:
                 bicis_disponibles += cantidad_a_devolver
                 viajes_activos -= cantidad_a_devolver
-                print(f"Devolución exitosa, ha regresado {cantidad_a_devolver} bicicletas")            
+                print(f"Devolución exitosa, ha regresado {cantidad_a_devolver} bicicletas")
+        except ValueError:
+            print("Error: debe ingresar un número entero válido")
+    #Opción 4 Viajes activos
+    elif opcion == 4:
+        print(f"\n[HISTORIAL] actualmente hay {viajes_activos} bicicleta(s) en uso por usuarios")
+    #Opción 5 Salir
+    elif opcion == 5:
+        print("Gracias por utilizar ")                    
